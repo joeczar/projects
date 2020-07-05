@@ -1,0 +1,46 @@
+[
+    {
+        "link": "https://mauricio.github.io/javascript-from-hell/#/",
+        "headline": "Javascript from Hell "
+    },
+    {
+        "link": "https://www.smashingmagazine.com/2009/04/from-table-hell-to-div-hell/",
+        "headline": "Table Layouts vs. Div Layouts: From Hell to… Hell?"
+    },
+    {
+        "link": "https://www.smashingmagazine.com/2011/10/prefixfree-break-free-from-css-prefix-hell/",
+        "headline": "PrefixFree: Break Free From CSS Prefix Hell"
+    },
+    {
+        "link": "https://blog.theodo.com/2018/06/write-better-css-part-1/",
+        "headline": "Write Better CSS: From Hell to Heaven (Part 1)"
+    },
+    {
+        "link": "https://www.sitepoint.com/community/t/volusion-css-hell/8019",
+        "headline": "Volusion CSS Hell"
+    },
+    {
+        "link": "http://catb.org/esr/html-hell.html",
+        "headline": "The HTML Hell Page"
+    },
+    {
+        "link": "https://www.warriorforum.com/website-design/862642-css-heaven-css-hell.html",
+        "headline": "CSS Heaven - CSS Hell"
+    },
+    {
+        "link": "https://medium.com/@js_tut/the-great-escape-from-callback-hell-3006fa2c82e",
+        "headline": "The Great Escape from Callback Hell"
+    },
+    {
+        "link": "https://blog.roysolberg.com/2017/10/dom2-bookmarklet",
+        "headline": " DOM II: JavaScript Hell"
+    },
+    {
+        "link": "https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8",
+        "headline": "Asynchronous JavaScript: From Callback Hell to Async and Await"
+    },
+    {
+        "link": "https://www.sitepoint.com/saved-from-callback-hell/",
+        "headline": "Saved from Callback Hell"
+    }
+]

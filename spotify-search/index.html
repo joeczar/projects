@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Search</h1>
+        <input type="text" name="user-input" placeholder="Artist or Album...">
+        <select>
+            <option id="artist">Artist</option>
+            <option id="album">Album</option>
+            
+        </select>
+         <button id="go">Go</button>
+        <div id="results-container"></div>
+    </div>
+    <script id="spotiBars" type="text/x-handlebars-template">
+        {{#unless offset}}
+        {{#if items.[0]}}
+            <h1 id="responseHeader">Results for {{searchTerm}}</h1>
+        {{/if}}
+        {{#unless items.[0]}}
+            <span id="noResults">No results for {{searchTerm}}</span>
+        {{/unless}}
+        {{/unless}}
+        {{#items}}
+        <div class="items">
+            <a href={{external_urls.spotify}}>
+                <div class="imgWrapper">
+                    {{#if images.[0]}}
+                    <img src={{images.[0].url}}>
+                    {{/if}}
+                    {{#unless images.[0]}}
+                    <img src="https://www.svgrepo.com/show/55272/spotify.svg">
+                    {{/unless}}
+                </div>
+                <div class="itemName">
+                    <h2>{{name}}</h2>
+                </div>
+                
+            </a>
+        </div>
+        {{/items}}
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src='script.js'></script>
+</body>
+</html> 

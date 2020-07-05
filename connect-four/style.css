@@ -1,0 +1,295 @@
+/* #43bccd lightblue #662e9b lavender #ea3546 coho #f86624 orange #f9c80e yellow */
+
+@font-face {
+    font-family: "OleoScript";
+    src: url(OleoScript-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Odibee";
+    src: url(OdibeeSans-Regular.ttf) format("truetype");
+}
+
+body {
+    min-height: 100vh;
+    background-color: #43bccd;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    margin: 0;
+}
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 125px;
+    width: 100%;
+}
+#start {
+    align-self: center;
+    margin: 30px auto -10px auto;
+    font-size: x-large;
+    background: none;
+    border: none;
+    font-family: "Odibee";
+    color: #f9c80e;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.player {
+    margin: auto;
+    font-family: "Odibee";
+    font-size: x-large;
+}
+.playerName {
+    font-family: "OleoScript";
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.playerName1 {
+    color: #ea3546;
+}
+.playerName2 {
+    color: #662e9b;
+}
+#title {
+    font-family: "OleoScript";
+    font-size: xx-large;
+    color: #f86624;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 1);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+}
+#title h1 {
+    margin: auto;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-items: center;
+}
+.slot {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 40px solid #f9c80e;
+    transform: translate(-30px, -30px);
+}
+#board {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    margin: auto;
+    z-index: 2;
+}
+.column {
+    margin: auto;
+}
+.player1 {
+    background-color: #ea3546;
+}
+.player2 {
+    background-color: #662e9b;
+}
+#shroud {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.6);
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.alert {
+    position: fixed;
+    background-color: #43bccd;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input label {
+    display: block;
+    font-family: "Odibee";
+    font-size: x-large;
+}
+#input input {
+    font-family: "OleoScript";
+    font-size: x-large;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+}
+#body {
+    width: 100%;
+    text-align: center;
+}
+#input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#inputWrapper {
+    margin: auto;
+}
+.alert-h1 {
+    font-family: "OleoScript";
+    font-size: 60px;
+    /* color: #ea3546; */
+    color: #f86624;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0.5em auto 0.25em;
+}
+#victory h2 {
+    margin: auto;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+.shadow {
+    -webkit-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+}
+.button {
+    font-family: "Odibee";
+    font-size: x-large;
+    margin: 1em auto;
+    padding: 0.25em 0.5em;
+    border-radius: 15px;
+}
+#leftX {
+    transform: rotate(45deg);
+}
+.ex {
+    width: 2px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 25%;
+    position: absolute;
+}
+#rightX {
+    transform: rotate(-45deg);
+}
+#xWrapper {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.point {
+    background-color: #ea3546 !important;
+    color: white;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto auto auto 10px;
+}
+.playerPoint {
+    display: flex;
+    flex-direction: row;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 25px);
+    margin: auto;
+    width: 40px;
+    background-color: #43bccd;
+    color: white;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-family: "Odibee";
+}
+#menu:hover {
+    cursor: pointer;
+    /* -webkit-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75); */
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+#dropdown {
+    position: fixed;
+    z-index: 4;
+    margin: 0px;
+    padding: 20px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    left: calc(50% - 375px);
+    background-color: #43bccd;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 200px;
+}
+#saveWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#gamesWrapper {
+    background-color: #308a96;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    height: 225px;
+    justify-self: right;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: medium;
+    color: white;
+}
+#closeMenu {
+    margin: 10px auto;
+}
+.upAndAway {
+    top: -330px;
+}
+#clear {
+    font-size: small;
+    height: 30px;
+}
